@@ -1,0 +1,76 @@
+/* Boxed title style */
+.boxed-title {
+    background-color: #C0C0C0;
+    color: #b3d1ff; /* Lightened color */
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Main page style */
+body {
+    background-color: #001f3f; /* New Blue Background */
+    color: #C0C0C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header text styles for the main Group Chat title */
+h1 {
+    text-align: center;
+    color: #ffffff; /* White color for the Group Chat title */
+    margin-bottom: 40px;
+}
+
+/* Chat messages style */
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+}
+
+.chat-message h3 {
+    color: #000080; /* Navy blue color for usernames */
+}
+
+/* Horizontal line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #C0C0C0;
+}
+
+/* Button style */
+button {
+    background-color: #C0C0C0;
+    color: #001f3f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A9A9A9;
+}
+
+/* Text area style */
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Center the main content */
+#chat, #message-form {
+    max-width: 800px;
+    margin: auto;
+}

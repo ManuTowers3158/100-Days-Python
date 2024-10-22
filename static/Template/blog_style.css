@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #001f3f; /* Night blue */
+  margin: 0;
+  padding: 0;
+}
+
+.boxed-title {
+    background-color: #C0C0C0; /* Dark silver background */
+    color: #0056b3;; /* Night blue text color */
+    padding: 20px; /* Space inside the box */
+    border: 2px solid #4a4a4a; /* Darker border for contrast */
+    border-radius: 10px; /* Rounded corners (optional) */
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Margin around the box */
+    max-width: 90%; /* Maximum width for responsiveness */
+}
+
+header {
+  background: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+section {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.boxed-h2 {
+    background-color: #C0C0C0; /* Bright silver background */
+    color: #0056b3; /* Night blue text color */
+    padding: 20px; /* Space inside the box */
+    border: 2px solid #4a4a4a; /* Darker border for contrast */
+    border-radius: 10px; /* Rounded corners (optional) */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Top and bottom margin, no left/right margin */
+    margin-left: 3.9%; /* Adjust this value to move the box to the right */
+    max-width: 25%; /* Maximum width for responsiveness */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+p {
+    color: #C0C0C0; /* Font color (e.g., a bright yellow) */
+    font-size: 18px; /* Font size (e.g., 18 pixels) */
+    font-family: 'Arial', sans-serif; /* Font style (e.g., Georgia serif) */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 20px 0; /* Margin above and below the paragraph */
+    margin-left: 3.9%; /* Adjust this value to move the box to the right */
+    margin-right: 25%;
+    padding: 10px; /* Padding inside the paragraph */
+    text-align: left; /* Align text to the left */
+}
+
+h2 {
+  color: #205893;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 3.9%;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+  }
+}

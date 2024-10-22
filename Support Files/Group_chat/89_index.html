@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat</title>
+    <link rel="stylesheet" type="text/css" href="/static/89_index.css ">
+</head>
+<body>
+    <h1>Group Chat</h1>
+
+    <!-- Display buttons based on session status -->
+    <div>
+        {% if session['username'] %}
+            <p>Welcome, {{ session['username'] }}!</p>
+            <button onclick="window.location.href='/logout';">Logout</button>
+        {% else %}
+            <button onclick="window.location.href='/sign-up';">Sign Up</button>
+            <button onclick="window.location.href='/login';">Login</button>
+        {% endif %}
+    </div>
+
+    <div id="chat">
+        {% for message in messages %}
+            <div class="chat-message">
+                <h3>{{ message.username }}</h3>
+                <p><em>{{ message.date.strftime('%B %d, %H:%M') }}</em></p>
+                <p>{{ message.message }}</p>
+                {% if session['admin'] %}
+                    <form action="/delete_message" method="POST" style="display:inline;">
+                        <input type="hidden" name="message_date" value="{{ message.date }}">
+                        <input type="hidden" name="username" value="{{ message.username }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                {% endif %}
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Form to submit new messages (only displayed if session is active) -->
+    {% if session['username'] %}
+        <div id="message-form">
+            <form action="/send_message" method="POST">
+                <label for="new_message">Write a message:</label><br>
+                <textarea id="new_message" name="new_message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    {% endif %}
+</body>
+</html>

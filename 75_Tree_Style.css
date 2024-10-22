@@ -1,0 +1,112 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #001f3f; /* Night blue */
+  margin: 0;
+  padding: 0;
+}
+
+.boxed-title {
+    background-color: #C0C0C0; /* Dark silver background */
+    color: #0056b3;; /* Night blue text color */
+    padding: 10px; /* Space inside the box */
+    border: 2px solid #4a4a4a; /* Darker border for contrast */
+    border-radius: 10px; /* Rounded corners (optional) */
+    text-align: center; /* Center align the text */
+    margin: 10px auto; /* Margin around the box */
+    max-width: 20%; /* Maximum width for responsiveness */
+    font-size: 26px; /* Reduce the font size (example value) */
+}
+
+header {
+  background: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+section {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.boxed-h2 {
+    background-color: #C0C0C0; /* Bright silver background */
+    color: #0056b3; /* Night blue text color */
+    font-size: 24px; /* Reduce the font size (example value) */
+    padding: 10px; /* Reduce padding to flatten the box */
+    border: 2px solid #4a4a4a; /* Darker border for contrast */
+    border-radius: 5px; /* Less rounded corners */
+    text-align: center; /* Center align the text */
+    margin: 0 auto; /* Center the box horizontally */
+    max-width: 15%; /* Maximum width for responsiveness */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+p {
+    color: #C0C0C0; /* Font color (e.g., a bright yellow) */
+    font-size: 16px; /* Font size (e.g., 18 pixels) */
+    font-family: 'Arial', sans-serif; /* Font style (e.g., Georgia serif) */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 10px 0; /* Margin above and below the paragraph */
+    margin-left: 3.9%; /* Adjust this value to move the box to the right */
+    margin-right: 25%;
+    padding: 10px; /* Padding inside the paragraph */
+    text-align: left; /* Align text to the left */
+}
+.p2 {
+    color: #C0C0C0; /* Font color */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font style */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0 auto; /* Center the paragraph horizontally (if width is defined) */
+    padding: 10px; /* Padding inside the paragraph */
+    text-align: center; /* Center align the text inside the paragraph */
+    font-style: italic; /* Italic text */
+}
+
+
+h2 {
+  color: #205893;
+}
+
+img {
+  width: 20%; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 50%; /* Crop the image into a circle */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.link-box {
+    background-color: #C0C0C0; /* Bright silver background */
+    color: #0056b3; /* Night blue text color */
+    font-size: 20px;
+    padding: 20px; /* Space inside the box */
+    border: 2px solid #4a4a4a; /* Darker border for contrast */
+    border-radius: 10px; /* Rounded corners */
+    display: block; /* Allows the box to be centered with margin */
+    max-width: 190px; /* Maximum width of the box */
+    margin: 0 auto; /* Center the image horizontally */
+    margin: 10px auto; /* Margin around the box */
+
+}
+
+.link-box p {
+    margin: 5px 0; /* Space above and below each paragraph */
+    text-align: center;
+}
+
+.link-box a {
+    color: #0056b3; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size of the links */
+    font-weight: bold;
+
+}
+
+.link-box a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

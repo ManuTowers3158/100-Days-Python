@@ -1,0 +1,50 @@
+[
+    {
+        "username": "Eve_875",
+        "password": "pass3158",
+        "messages": [
+            {
+                "date": "2024-09-05 12:52:13",
+                "message": "Hello there"
+            },
+            {
+                "date": "2024-09-05 12:52:26",
+                "message": "Its me"
+            },
+            {
+                "date": "2024-09-05 15:57:10",
+                "message": "Hello I am not Eve"
+            }
+        ]
+    },
+    {
+        "username": "Bob_821",
+        "password": "password_8579",
+        "messages": []
+    },
+    {
+        "username": "Alice_357",
+        "password": "password_9479",
+        "messages": [
+            {
+                "date": "2024-09-03 09:20:28",
+                "message": "This is a message from Alice"
+            }
+        ]
+    },
+    {
+        "username": "Manu3158",
+        "password": "Manu",
+        "messages": [
+            {
+                "date": "2024-09-05 13:05:04",
+                "message": "General Kenobi"
+            }
+        ]
+    },
+    {
+        "username": "Manu",
+        "password": "Manu",
+        "messages": []
+    }
+]

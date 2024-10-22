@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Track Preview</title>
+    <link rel="stylesheet" type="text/css" href="../static/93_spotify_api_style.css">
+</head>
+<body>
+    <h1>Day 93 Spotify API</h1>
+
+    <!-- Input box and button to search for an artist -->
+    <div>
+        <label for="artistInput">Enter artist name:</label>
+        <input type="text" id="artistInput" placeholder="Artist Name">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <ul id="trackList"></ul>
+
+    <script>
+        // Function to search for tracks by artist
+        function searchArtist() {
+            const artist = document.getElementById('artistInput').value;
+            const trackList = document.getElementById("trackList");
+
+            // Clear previous search results
+            trackList.innerHTML = '';
+
+            // Fetch tracks from the Python back-end based on artist input
+            fetch(`/get_tracks?artist=${encodeURIComponent(artist)}`)
+            .then(response => response.json())
+            .then(tracks => {
+                // Display each track and its preview URL
+                tracks.forEach(track => {
+                    const li = document.createElement("li");
+                    li.innerHTML = `
+                        <strong>${track.name}</strong><br>
+                        <audio controls>
+                            <source src="${track.preview_url}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    `;
+                    trackList.appendChild(li);
+                });
+            });
+        }
+
+        // Add event listener to the search button
+        document.getElementById('searchBtn').addEventListener('click', searchArtist);
+    </script>
+
+</body>
+</html>
